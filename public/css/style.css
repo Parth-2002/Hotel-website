@@ -97,10 +97,25 @@ color: #222222 !important;
     background-color: white;
 }
 
-/* New Page */
+/* New Page & Edit Page */
 
-.add-btn {
+.add-btn, .edit-btn {
     background-color: #fe424d;
     border: none;
     width: 5rem;
+}
+
+/* Show page */
+.show-img {
+    height: 30vh;
+}
+
+.delete-btn {
+    background-color: #fe424d;
+    border: none;
+}
+
+.btns {
+    display: flex;
+
 }
