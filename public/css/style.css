@@ -54,6 +54,7 @@ color: #222222 !important;
 }
 
 .f-info {
+    width: 100%;
     text-align: center;
     height: 8rem;
     background-color: #ebebeb;
@@ -64,7 +65,7 @@ color: #222222 !important;
 }
 
 /* Cards */
-.card {
+.listing-card {
     border: none;
     margin-bottom: 2rem;
 }
@@ -108,11 +109,6 @@ color: #222222 !important;
 /* Show page */
 .show-img {
     height: 30vh;
-}
-
-.delete-btn {
-    background-color: #fe424d;
-    border: none;
 }
 
 .btns {
