@@ -10,7 +10,10 @@ const listingSchema = new Schema({
     description: String,
     image: {
         filename: String,
-        url: String
+        url: {
+            type: String,
+            default: "https://res.cloudinary.com/dxkufsejm/image/upload/v1633012680/Wanderlust/DefaultImage.jpg",
+            }
     },
     // image: {
     //         type: String,
