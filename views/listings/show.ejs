@@ -21,7 +21,7 @@
 <div class="mb-4 btns">
     <a href="/listings/<%= listing._id %>/edit" class="btn btn-dark edit-btn col-1 offset-3">Edit</a>
 
-    <form method="POST" action="/listing/<%= listing._id %>?_method=DELETE">
+    <form method="POST" action="/listings/<%= listing._id %>?_method=DELETE">
         <button class="btn btn-dark offset-4 px-4">Delete</button>
     </form>
 </div>
