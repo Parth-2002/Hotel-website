@@ -5,23 +5,28 @@ const Review = require("./review.js");
 const listingSchema = new Schema({
     title: {
         type: String,
-        required: true,
+        require: true
     },
-    description: String,
+    description: {
+        type: String,
+        require: true
+    },
     image: {
-        filename: String,
-        url: {
-            type: String,
-            default: "https://res.cloudinary.com/dxkufsejm/image/upload/v1633012680/Wanderlust/DefaultImage.jpg",
-            }
+        url:String,
+        filename:String,
     },
-    // image: {
-    //         type: String,
-    //         set: (v) => v===" "? "Default image" : v,
-    //     },
-    price: Number,
-    location: String,
-    country: String,
+    price: {
+        type: Number,
+        require: true
+    },
+    location: {
+        type: String,
+        require: true
+    },
+    country: {
+        type: String,
+        require: true
+    },
     reviews: [
         {
             type: Schema.Types.ObjectId,

@@ -1,4 +1,4 @@
-const Listings = require("./models/listings");
+const Listings = require("./models/listing.js");
 const Reviews = require("./models/review.js");
 const ExpressError = require("./utils/ExpressError.js");
 const {listingSchema, reviewSchema} = require("./schema.js");
@@ -30,15 +30,15 @@ module.exports.isOwner = async (req, res, next) => {
 };
 
 module.exports.validateListing = (req, res, next) => {
-    let {error} = listingSchema.validate(req.body);
-    if(error) {
+    let { error } = listingSchema.validate(req.body);
+    // console.log(result);
+    if (error) {
         let errMsg = error.details.map((el) => el.message).join(",");
-        throw new ExpressError(400, errMsg);
+        throw new ExpressError(400, error);
     } else {
         next();
     }
-};
-
+}
 module.exports.validateReview = (req, res, next) => {
     let {error} = reviewSchema.validate(req.body);
     if(error) {
