@@ -115,3 +115,11 @@ color: #222222 !important;
     display: flex;
 
 }
+
+/* Map */
+#map {
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
