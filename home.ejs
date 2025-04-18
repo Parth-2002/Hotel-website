@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel 24 | Vecation Rental Company</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel 24 | Vecation Rental Company</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header">
+        <div class="nav">
+            <div class="nav-logo">
+                <div class="logo"></div>
+            </div>
+            <div class="nav-bar">
+                <div class="search-bar">
+                    <div class="destination hover">
+                        <label for="where">Where</label><br>
+                        <input type="text" name="where" placeholder="Destination">
+                    </div><hr class="hr-line">
+                    <div class="check-in hover">
+                        <label for="check-in">Check-in</label>
+                        <input type="date" name="check-in" placeholder="Add dates">
+                    </div><hr class="hr-line">
+                    <div class="check-out hover">
+                        <label for="check-out">Check-out</label>
+                        <input type="date" name="check-out" placeholder="Add dates">
+                    </div><hr class="hr-line">
+                    <div class="guest hover">
+                        <div class="who">
+                            <label for="guest">Who</label><br>
+                            <input type="text" name="guest" placeholder="Add guests">
+                        </div>
+                        <div class="search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-signin" onclick="signin()">
+                <i class="fa-solid fa-bars"></i>
+                <div class="user">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+        </div>
+        <div class="panel-bar">
+            <div class="panel">
+                <div class="panel-option">
+                    <div class="option">
+                        <img src="assets/type/Amazing_views.png" alt="">
+                        <p>Amazing views</p>
+                    </div>
+                    <div class="option">
+                        <img src="assets/type/BeachFront.png" alt="">
+                        <p>Beach front</p>
+                        </div>
+                    <div class="option">
+                        <img src="assets/type/Cabins.png" alt="">
+                        <p>Cabins</p>
+                    </div>
+                    <div class="option">
+                        <img src="assets/type/Camping.png" alt="">
+                        <p>Camping</p>
+                    </div>
+                    <div class="option">
+                        <img src="assets/type/castle.png" alt="">
+                        <p>castles</p>
+                    </div>
+                    <div class="option">
+                        <img src="assets/type/caves.png" alt="">
+                        <p>Caves</p>
+                    </div>
+                    <div class="option">
+                        <img src="assets/type/Islands.png" alt="">
+                        <p>Islands</p>
+                    </div>
+                    <div class="option">
+                        <img src="assets/type/National_park.png" alt="">
+                        <p>National parks</p>
+                    </div>
+                    <div class="option">
+                        <img src="assets/type/OMG.png" alt="">
+                        <p>OMGs</p>
+                    </div>
+                    <div class="option">
+                        <img src="assets/type/Treehouse.png" alt="">
+                        <p>Treehouse</p>
+                    </div>
+                    <div class="option">
+                        <img src="assets/type/Trending.png" alt="">
+                        <p>Tranding</p>
+                    </div>
+                    <div class="option">
+                        <img src="assets/type/Skiing.png" alt="">
+                        <p>Skiing</p>
+                    </div>
+                    <div class="option">
+                        <img src="assets/type/Tropical.png" alt="">
+                        <p>Tropical</p>
+                    </div>
+                    <div class="option">
+                        <img src="assets/type/Luxe.png" alt="">
+                        <p>Luxe</p>
+                    </div>
+                    <div class="option">
+                        <img src="assets/type/mansions.png" alt="">
+                        <p>Mensions</p>
+                    </div>
+                    <div class="option">
+                        <img src="assets/type/Contry_sides.png" alt="">
+                        <p>Contry Sides</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="filter">
+                    <div class="filter-icon"></div>
+                    <p>Filters</p>
+                </div>
+            </div>       
+        </div>
+    </div>
+    <div class="main">
+        <div class="hotel-section">
+            <div class="box" id="Los Angeles" onclick="villa()">
+                <img src="assets/hotels/Home in Los Angeles_california_US.webp" alt="">
+                <h4>Home in Los Angeles, california, US</h4>
+                <p>J-Boho Chic, Condo-free, Parking rooftop <br>9 min walk</p>
+                <p>26 - 31 May</p>
+                <div class="price"><b><i class="fa-solid fa-indian-rupee-sign"></i> 12,908</b> night</div>
+            </div>
+            <div class="box" id="Indonesia" onclick="villa()">
+                <img src="assets/hotels/Kecamatan Katu Utara_Indo.webp" alt="">
+                <h4>Kecamatan Katu Utara, Indonesia</h4>
+                <p>10% OFF | Experiance Romantic Getaway <br>1 King bed</p>
+                <p>24 - 29 May</p>
+                <div class="price"><b><i class="fa-solid fa-indian-rupee-sign"></i> 19,584</b> night</div>
+            </div>
+            <div class="box" id="Tegallalang" onclick="villa()">
+                <img src="assets/hotels/kecamatan.webp" alt="">
+                <h4>Villa in Kecamatan, Tegallala...</h4>
+                <p>A Healing Sanctury Wooden Private Pool<br>1 bed</p>
+                <p>18 - 23 May</p>
+                <div class="price"><b><i class="fa-solid fa-indian-rupee-sign"></i> 4,891</b> night</div>
+            </div>
+            <div class="box" id="Thailand" onclick="villa()">
+                <img src="assets/hotels/thailand.webp" alt="">
+                <h4>Ko Pha Ngan, Thailand</h4>
+                <p>3,093 kilometers away </p>
+                <p>16 - 21 May</p>
+                <div class="price"><b><i class="fa-solid fa-indian-rupee-sign"></i> 56,388 </b> night</div>
+            </div>
+            <div class="box" id="Abiansemal" onclick="villa()">
+                <img src="assets/hotels/Abiansemal_Indo.webp" alt="">
+                <h4>Abiansemal, Indonesia</h4>
+                <p>Aura House 2bds Eco Bamboo House <br>2 Double beds</p>
+                <p>28 Aug - 2 Sep</p>
+                <div class="price"><b><i class="fa-solid fa-indian-rupee-sign"></i> 41,556</b> night</div>
+            </div>
+            <div class="box" id="Spain" onclick="villa()">
+                <img src="assets/hotels/alobrena_spain.webp" alt="">
+                <h4>Villa in Salobrina, Spain</h4>
+                <p>RentitSpain Cliff House <br>4 beds</p>
+                <p>8 - 13 Aug</p>
+                <div class="price"><b><i class="fa-solid fa-indian-rupee-sign"></i> 1,33,627</b> night</div>
+            </div>
+            <div class="box" id="Philippines" onclick="villa()">
+                <img src="assets/hotels/calaca_Philippines.webp" alt="">
+                <h4>Calaca, Philippines</h4>
+                <p>Cabin 1-Mountainside Luxury cabin<br>3 beds</p>
+                <p>26 - 31 May</p>
+                <div class="price"><b><i class="fa-solid fa-indian-rupee-sign"></i> 36,198</b> night</div>
+            </div>
+            <div class="box" id="Delray" onclick="villa()">
+                <img src="assets/hotels/Flat in Delray beach.webp" alt="">
+                <h4>Flat in Delray beach</h4>
+                <p>CASA Delray 6 - Luxury & Modern <br>3 beds</p>
+                <p>5 - 10 May</p>
+                <div class="price"><b><i class="fa-solid fa-indian-rupee-sign"></i> 14,035</b> night</div>
+            </div>
+            <div class="box" id="Manali" onclick="villa()">
+                <img src="assets/hotels/manali.webp" alt="">
+                <h4>Farm Stay in Manali</h4>
+                <p>J-Boho Chic, Condo-free, Parking rooftop <br>9 min walk</p>
+                <p>26 - 31 May</p>
+                <div class="price"><b><i class="fa-solid fa-indian-rupee-sign"></i> 4,900</b> night</div>
+            </div>
+            <div class="box" id="Goa" onclick="villa()">
+                <img src="assets/hotels/goa.webp" alt="">
+                <h4>Villa in Siolim</h4>
+                <p>10% OFF | Experiance Romantic Getaway <br>1 King bed</p>
+                <p>24 - 29 May</p>
+                <div class="price"><b><i class="fa-solid fa-indian-rupee-sign"></i> 22,800</b> night</div>
+            </div>
+            <div class="box" id="Kerala" onclick="villa()">
+                <img src="assets/hotels/kerala.webp" alt="">
+                <h4>Treehouse in thavinhal</h4>
+                <p>A Healing Sanctury Wooden Private Pool<br>1 bed</p>
+                <p>18 - 23 May</p>
+                <div class="price"><b><i class="fa-solid fa-indian-rupee-sign"></i> 4,000</b> night</div>
+            </div>
+            <div class="box" id="Bengaluru" onclick="villa()">
+                <img src="assets/hotels/bengaluru.webp" alt="">
+                <h4>Bungalow in Bengaluru</h4>
+                <p>3,093 kilometers away </p>
+                <p>16 - 21 May</p>
+                <div class="price"><b><i class="fa-solid fa-indian-rupee-sign"></i> 3,900 </b> night</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <hr>
+        <div class="foot-bar">
+            <div class="foot1">
+                <p><i class="fa-regular fa-copyright"></i> 2024 Hotel 24,Inc.</p>
+                <p>Privacy</p>
+                <p>Terms</p>
+                <p>Sitemap</p>
+                <p>Company details</p>
+            </div>
+            <div class="foot2">
+                <p><i class="fa-solid fa-globe"></i> English (In)</p>
+                <p><i class="fa-solid fa-indian-rupee-sign"></i> INR</p>
+                <p>Support & resources <i class="fa-solid fa-caret-down"></i></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+</body>
+</html>

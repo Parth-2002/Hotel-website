@@ -46,7 +46,11 @@ const listingSchema = new Schema({
         coordinates: {
           type: [Number],
           required: true,
-        },
+        }
+    },
+    category: {
+        type: String,
+        enum: [],
     }
 });
 
