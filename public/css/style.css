@@ -135,3 +135,60 @@ color: #222222 !important;
     border-radius: 10px;
     margin-top: 20px;
 }
+
+/* Responsive Styles for Mobile View */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .f-info {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .f-info-links, 
+    .f-info-socials,
+    .f-info-brand {
+        flex-direction: column;
+        margin-bottom: 0.5rem;
+    }
+
+    .f-info-links a {
+        margin: 0.25rem 0;
+    }
+
+    .btns {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .show-img {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .add-btn, .edit-btn {
+        width: 100%;
+    }
+
+    .card-img-top {
+        height: 200px;
+    }
+
+    .card-body {
+        padding: 0.5rem !important;
+    }
+
+    #map {
+        height: 250px;
+    }
+
+    .fa-compass {
+        font-size: 1.5rem;
+    }
+}
